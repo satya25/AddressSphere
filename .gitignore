@@ -1,0 +1,74 @@
+/doc/  
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+*.cover
+*.py,cover
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Docker
+*.env
+Dockerfile
+
+# Jenkins
+Jenkinsfile
+
+# Kubernetes
+ci_cd/kubernetes/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+

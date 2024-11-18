@@ -1,0 +1,51 @@
+<!-- edit_address.html -->
+{% extends 'base.html' %}
+
+{% block title %}Edit Address{% endblock %}
+
+{% block content %}
+<!-- Header for the form page -->
+<h1 class="mb-4">Edit Address</h1>
+
+<!-- Form to edit an existing address; posts data to /edit/{{ address.id }} endpoint -->
+<form action="/edit/{{ address.id }}" method="post" class="form-control">
+    <!-- Input field for Name -->
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-control" value="{{ address.name }}" required>
+    </div>
+    
+    <!-- Input field for Street -->
+    <div class="mb-3">
+        <label for="street" class="form-label">Street</label>
+        <input type="text" id="street" name="street" class="form-control" value="{{ address.street }}" required>
+    </div>
+    
+    <!-- Input field for City -->
+    <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" id="city" name="city" class="form-control" value="{{ address.city }}" required>
+    </div>
+    
+    <!-- Input field for State -->
+    <div class="mb-3">
+        <label for="state" class="form-label">State</label>
+        <input type="text" id="state" name="state" class="form-control" value="{{ address.state }}" required>
+    </div>
+    
+    <!-- Input field for Zip Code -->
+    <div class="mb-3">
+        <label for="zip_code" class="form-label">Zip Code</label>
+        <input type="text" id="zip_code" name="zip_code" class="form-control" value="{{ address.zip_code }}" required>
+    </div>
+    
+    <!-- Input field for Country -->
+    <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" id="country" name="country" class="form-control" value="{{ address.country }}" required>
+    </div>
+    
+    <!-- Submit button to send form data -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

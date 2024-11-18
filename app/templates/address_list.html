@@ -1,0 +1,85 @@
+<!-- address_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Display the Active Addresses section -->
+<h3>Active Addresses</h3>
+<table class="table table-striped mt-3">
+    <thead>
+        <!-- Table headers for active addresses -->
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop through active addresses and display each one in a table row -->
+        {% for address in active_addresses %}
+        <tr>
+            <td>{{ address.id }}</td>
+            <td>{{ address.name }}</td>
+            <td>{{ address.street }}</td>
+            <td>{{ address.city }}</td>
+            <td>{{ address.state }}</td>
+            <td>{{ address.zip_code }}</td>
+            <td>{{ address.country }}</td>
+            <td>
+                <!-- Action buttons for editing, deleting, and viewing the address -->
+                <a href="/edit/{{ address.id }}" class="btn btn-primary btn-sm">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/delete/{{ address.id }}" class="btn btn-danger btn-sm">Delete</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/view/{{ address.id }}" class="btn btn-info btn-sm">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Display the Deleted Addresses section -->
+<h3>Deleted Addresses</h3>
+<table class="table table-striped mt-3">
+    <thead>
+        <!-- Table headers for deleted addresses -->
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Street</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Loop through deleted addresses and display each one in a table row -->
+        {% for address in deleted_addresses %}
+        <tr>
+            <!-- Display deleted addresses with a strikethrough style -->
+            <td><s>{{ address.id }}</s></td>
+            <td><s>{{ address.name }}</s></td>
+            <td><s>{{ address.street }}</s></td>
+            <td><s>{{ address.city }}</s></td>
+            <td><s>{{ address.state }}</s></td>
+            <td><s>{{ address.zip_code }}</s></td>
+            <td><s>{{ address.country }}</s></td>
+            <td>
+                <!-- Action button for restoring the deleted address -->
+                <a href="/restore/{{ address.id }}" class="btn btn-success btn-sm">Restore</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Add some spacing and a button to create a new address -->
+<section style="height:20px;"></section>
+<a href="/create" class="btn btn-success mt-3">Add New Address</a>
+{% endblock %}

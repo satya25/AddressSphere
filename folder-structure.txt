@@ -1,0 +1,84 @@
+total 39
+ 39687971716446510 0 drwxr-xr-x 1 spnig 197609    0 Nov 14 07:35 tests/
+ 17451448556304722 4 drwxr-xr-x 1 spnig 197609    0 Nov 14 07:35 ci_cd/
+  3940649674193513 0 -rw-r--r-- 1 spnig 197609    0 Nov 14 07:35 README.md
+  9007199254985105 4 drwxr-xr-x 1 spnig 197609    0 Nov 14 07:56 doc/
+  3940649674193496 1 -rw-r--r-- 1 spnig 197609    8 Nov 14 07:56 .gitignore
+  6192449487878416 4 -rwxr-xr-x 1 spnig 197609 1513 Nov 14 08:05 setup_project.sh*
+ 30962247438380233 0 drwxr-xr-x 1 spnig 197609    0 Nov 14 10:12 venv/
+  4785074604325473 4 -rw-r--r-- 1 spnig 197609 1723 Nov 14 10:35 requirements.txt
+200128708441284142 4 drwxr-xr-x 1 spnig 197609    0 Nov 14 10:49 app/
+ 15199648742620035 1 -rw-r--r-- 1 spnig 197609  111 Nov 14 14:24 .env
+  4503599627614821 1 -rw-r--r-- 1 spnig 197609  250 Nov 14 14:24 config.py
+  6755399441318070 0 drwxr-xr-x 1 spnig 197609    0 Nov 14 14:24 __pycache__/
+  5348024557746791 8 -rw-r--r-- 1 spnig 197609 6464 Nov 15 20:08 run.py
+ 27303072741205300 4 drwxr-xr-x 1 spnig 197609    0 Nov 16 07:42 ../
+ 22236523160382461 0 -rw-r--r-- 1 spnig 197609    0 Nov 16 18:12 folder-structure.txt
+ 35184372088936004 4 drwxr-xr-x 1 spnig 197609    0 Nov 16 18:12 ./
+
+
+===========
+
+Location of app folder:
+
+
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/app
+	$ pwd
+	/c/Learn-DevOps-CICD/address_sphere/app
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/app
+	$
+	
+Contents of app folder:
+
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/app
+	$ ls -ls
+	total 33
+	 1 -rw-r--r-- 1 spnig 197609   234 Nov 14 11:52 __init__.py
+	 4 drwxr-xr-x 1 spnig 197609     0 Nov 16 01:18 __pycache__/
+	12 -rwxr-xr-x 1 spnig 197609 10844 Nov 15 19:15 models.py*
+	12 -rwxr-xr-x 1 spnig 197609  9028 Nov 15 20:07 routes.py*
+	 0 drwxr-xr-x 1 spnig 197609     0 Nov 14 07:46 services/
+	 4 drwxr-xr-x 1 spnig 197609     0 Nov 14 20:37 templates/
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/app
+	$
+
+
+
+
+
+
+Location of two unit test files:
+
+
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere
+	$ cd tests/
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/tests
+	$ cd unit/
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/tests/unit
+	$ ls -ls
+	total 16
+	0 -rw-r--r-- 1 spnig 197609    0 Nov 14 07:35 __init__.py
+	4 drwxr-xr-x 1 spnig 197609    0 Nov 16 18:16 __pycache__/
+	4 drwxr-xr-x 1 spnig 197609    0 Nov 16 18:10 htmlcov/
+	4 -rw-r--r-- 1 spnig 197609 1347 Nov 16 18:20 test_models.py
+	4 -rw-r--r-- 1 spnig 197609 2687 Nov 16 18:20 test_routes.py
+	0 drwxr-xr-x 1 spnig 197609    0 Nov 16 17:56 venv/
+	(venv)
+	spnig@LAPTOP-FCSAI6EF /c/Learn-DevOps-CICD/address_sphere/tests/unit
+	$
+
+
+
+
+=====================
+
+
+
+
+

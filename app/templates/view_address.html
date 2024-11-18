@@ -1,0 +1,30 @@
+<!-- view_address.html -->
+{% extends 'base.html' %}
+
+{% block title %}View Address{% endblock %}
+
+{% block content %}
+<!-- Header for the view address page -->
+<h1 class="mb-4">View Address</h1>
+
+<!-- Card to display address details -->
+<div class="card">
+    <div class="card-body">
+        <!-- Display the name of the address -->
+        <p><strong>Name:</strong> {{ address.name }}</p>
+        <!-- Display the street of the address -->
+        <p><strong>Street:</strong> {{ address.street }}</p>
+        <!-- Display the city of the address -->
+        <p><strong>City:</strong> {{ address.city }}</p>
+        <!-- Display the state of the address -->
+        <p><strong>State:</strong> {{ address.state }}</p>
+        <!-- Display the zip code of the address -->
+        <p><strong>Zip Code:</strong> {{ address.zip_code }}</p>
+        <!-- Display the country of the address -->
+        <p><strong>Country:</strong> {{ address.country }}</p>
+        <!-- Button to go back to the home page -->
+        <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
+

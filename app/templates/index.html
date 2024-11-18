@@ -1,0 +1,18 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Jumbotron for a welcoming message and key actions -->
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to AddressSphere</h1>
+    <p class="lead">Manage your addresses efficiently and effortlessly.</p>
+    <hr class="my-4">
+    <p>Get started by adding a new address or viewing the address list.</p>
+    <!-- Buttons for key actions: creating a new address and viewing the address list -->
+    <a class="btn btn-primary btn-lg" href="/create" role="button">Add New Address</a>
+    <a class="btn btn-secondary btn-lg" href="/addresses" role="button">View Address List</a>
+</div>
+{% endblock %}
+
